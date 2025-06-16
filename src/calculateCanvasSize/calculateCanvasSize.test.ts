@@ -35,6 +35,30 @@ describe("calculateCanvasSize", () => {
     const result = calculateCanvasSize("-10", "20");
     expect(result).toEqual(-200);
   });
-  
+
+  //Unimplemented tests commented out for now
+  // test("returns 0 for both dimensions being 0", () => {
+  //   const result = calculateCanvasSize("0", "0");
+  //   expect(result).toEqual(0);
+  // });
+
+ 
+  // test("parses strings with extra spaces", () => {
+  //   const result = calculateCanvasSize(" 10 ", " 5 ");
+  //   expect(result).toEqual(50);
+  // });
+
+  // test("handles non-numeric strings by returning NaN", () => {
+  //   const result = calculateCanvasSize("abc", "20");
+  //   expect(result).toBeNaN();
+  // });
+
+
+
+  // test("handles very large values", () => {
+  //   const result = calculateCanvasSize("1000000", "2000000");
+  //   expect(result).toEqual(2000000000000);
+  // });
+
   
 });

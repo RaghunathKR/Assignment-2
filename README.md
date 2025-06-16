@@ -74,3 +74,21 @@ This section outlines which test cases are currently implemented and which are p
 - ❌ Handles floating-point result (non-integer output)
 - ❌ Handles very large coverage value (small result)
 - ❌ Handles area = 0
+## ✅ Test Coverage Overview (continued)
+
+### `calculateCanvasSize`
+
+#### ✅ Implemented Test Cases
+- ✔️ Returns correct area for valid string inputs
+- ✔️ Returns `0` when one dimension is zero
+- ✔️ Returns `NaN` for empty strings
+- ✔️ Returns `NaN` for `"null"` as input
+- ✔️ Handles decimal strings (truncates with `parseInt`)
+- ✔️ Handles both inputs as negative numbers
+- ✔️ Handles one negative, one positive value
+
+#### ❌ Unimplemented Test Cases
+- ❌ Returns `0` when both dimensions are zero
+- ❌ Trims spaces in string inputs (e.g. `" 10 "` should parse as `10`)
+- ❌ Returns `NaN` for fully non-numeric strings
+- ❌ Handles very large values
